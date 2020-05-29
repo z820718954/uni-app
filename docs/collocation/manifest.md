@@ -243,14 +243,14 @@ Tips：`uni-app` 中 `manifest.json->h5->devServer` 实际上对应 `webpack` �
 未配置 publicPath 时，发布时 index.html 中的结果：
 
 ```html
-<script src=/h5/static/js/chunk-vendors.803ce52d.js></script>
-<script src=/h5/static/js/index.34e8497d.js>
+<script src="/h5/static/js/chunk-vendors.803ce52d.js"></script>
+<script src="/h5/static/js/index.34e8497d.js">
 ```
 配置 publicPath 为 `https://www.cdn.com/h5/`（无效地址仅用作示例） 后，发布时 index.html 中的结果：
 
 ```html
-<script src=https://www.cdn.com/h5/static/js/chunk-vendors.803ce52d.js></script>
-<script src=https://www.cdn.com/h5/static/js/index.34e8497d.js>
+<script src="https://www.cdn.com/h5/static/js/chunk-vendors.803ce52d.js"></script>
+<script src="https://www.cdn.com/h5/static/js/index.34e8497d.js">
 ```
 
 **注意**
